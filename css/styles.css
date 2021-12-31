@@ -18,13 +18,7 @@ p {
 
 /* Headings */
 
-.big-heading {
-  font-family: "Montserrat-Black";
-  font-size: 2.0rem;
-  line-height: 1.5;
 
-
-}
 
 
 .section-heading {
@@ -32,10 +26,7 @@ p {
   line-height: 1.5;
 }
 
-.view-gallery-text{
-  font-size: 3rem;
-  line-height: 1.5;
-}
+
 /* Sections */
 
 .colored-section {
@@ -61,6 +52,10 @@ p {
   font-weight: bold;
 }
 
+.navbar-logo {
+  max-height: 3em;
+}
+
 .nav-item {
   padding: 0 18px;
 }
@@ -68,13 +63,14 @@ p {
 .nav-link {
   font-size: 1.8rem;
   font-family: "Ubuntu";
-  color: black !important;
+  color: #E15504 !important;
 }
 
-
-
+a {
+  text-decoration: none !important;
+}
 a:hover {
-  color: orange !important;
+  color: white !important;
 }
 
 /* Buttons */
@@ -128,29 +124,41 @@ a:hover {
 }
 
 
-
+/* ****************************************************************************** */
 .bottom-index {
   /* background-image: url("../images/bottom-index-bg.png");
   background-repeat: no-repeat;
   background-size: auto;
   padding-bottom: 100%; */
-  background-image: url("../images/top-index-bg.jpg");
+  /* background-image: url("../images/top-index-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: cover;
   padding-bottom: 25%;
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 0; */
+
+  /* background: url("../images/bottom-index-bg.png") no-repeat top left;
+  background-size: cover;
+  clear: both; */
+  padding: 0px;
+  margin: 0px;
+
 }
 
+.bg-logo-img {
+  height: 8em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.1;
+}
 .index-big-text {
   position: sticky;
   margin-top: 90%;
 }
 
-.navbar-logo {
-  max-height: 2em;
-}
+
 
 .yellow-rectangle {
   position: absolute;
@@ -237,13 +245,25 @@ a:hover {
 } */
 
 @media (max-width: 655px) {
+  .top-index {
+
+    background-image: url("../images/top-index-bg-phone.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-bottom: 0px;
+    padding-bottom: 80%;
+
+
+  }
 
   .yellow-rectangle {
 
-    height: 10vw;
-    width: 7.5vw;
-    border: 1px solid;
-    top:100px
+    height: 30vw;
+    width: 20vw;
+    border: 5px solid;
+    left: 30px;
+    top: 400px;
 
 
 
@@ -251,17 +271,54 @@ a:hover {
 
   .index-text {
     color: white;
-    font-size:2vw;
+    font-size:4vw;
     font-weight: bold;
-    top: 100px;
+    top: 420px;
+    left: 10px;
   }
 }
 /* .inex-text-rec {
   display: flex;
   justify-content: space-between;
 } */
+/* *******bottom index************ */
+
+.bottom-index-text {
+  font-family: "Montserrat-Black";
+  font-size:2rem;
+  line-height: 1.5;
 
 
+}
+
+.bottom-index-color-text {
+  color:#E15504;
+}
+
+.bottom-index {
+  padding-top: 12.5em;
+  padding-left: 7em;
+}
+
+.view-gallery-text{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #E15504;
+  padding-left: 23em;
+}
+
+.bottom-back-img {
+  position: absolute;
+  left: 70em;
+  top: 65em;
+}
+
+.bottom-front-img {
+  position: absolute;
+  left: 55em;
+  top: 73em;
+  height: 30em;
+}
 #contact-us {
   background-color: #2F3D4F;
   color: #fff;
@@ -276,6 +333,9 @@ a:hover {
   padding: 3% 10% 0%;
 }
 
+.contact-us {
+  color: white;
+}
 #about-us {
   background-color: #2F3D4F;
   color: #fff;
@@ -292,8 +352,10 @@ a:hover {
 
 
 
-
-
+.logo-text {
+  opacity: 0.1;
+  font-weight: 900;
+}
 
 
 
@@ -304,7 +366,10 @@ a:hover {
 
 /* Footer Section */
 
-
+.foot {
+    background-color: #2F3D4F;
+    padding-bottom: 2%;
+}
 .social-icon {
   margin: 20px 10px;
 }
